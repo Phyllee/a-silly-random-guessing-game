@@ -104,7 +104,7 @@ public:
     }
 
     static void clearConsole() {
-        /* it if detect using windows... it will execute the `std::system` to clear the screen
+        /* if it detect you running this program windows... it will execute the `std::system` to clear the screen
         , otherwise it uses the ansi escape code to clear the screen (for UNIX-like {FreeBSD})*/
         #ifdef _WIN32
         std::system("cls");
